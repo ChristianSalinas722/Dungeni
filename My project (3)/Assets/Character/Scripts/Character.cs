@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Character : MonoBehaviour
 {
@@ -28,11 +29,30 @@ public class Character : MonoBehaviour
     }
     void FixedUpdate(){
        if (movementInput != Vector2.zero){
-        int count = rb2d.Cast(
+            bool success = TryMove(movementInput);
+        
+            if(!success){
+                success = TryMove(new Vector2(0,movementInput.y));
+                
+            }
+       }
+    }
+    private bool TryMove(Vector2 direction){
+           int count = rb2d.Cast(
             movementInput, 
             movementFilter,
             castCollisions, 
             speed * Time.fixedDeltaTime + collisionOffset);
+            if (count == 0){
+                rb2d.MovePosition(rb2d.position + movementInput * speed * Time.fixedDeltaTime);
+                return true;
+            }
+            else {
+                return false;
+            }
+        
        }
+    void OnMove(InputValue movementValue){
+        movementInput = movementValue.Get<Vector2>();
     }
 }
