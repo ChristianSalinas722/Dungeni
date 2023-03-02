@@ -32,9 +32,29 @@ public class Character : MonoBehaviour
             bool success = TryMove(movementInput);
         
             if(!success){
-                success = TryMove(new Vector2(0,movementInput.y));
-                
+                success = TryMove(new Vector2(movementInput.x,0));
+                if(!success){
+                    success = TryMove(new Vector2(0,movementInput.y));
+                }
             }
+            if(movementInput.x > 0){
+            animator.SetBool("isMovingRight", success);
+            }
+            if(movementInput.y < 0){
+                animator.SetBool("isMovingDown", success);
+            }
+            if(movementInput.y > 0){
+                animator.SetBool("isMovingUp", success);
+            }
+            if(movementInput.x < 0){
+                animator.SetBool("isMovingLeft", success);
+            }
+       }
+       else{
+        animator.SetBool("isMovingRight", false);
+        animator.SetBool("isMovingLeft", false);
+        animator.SetBool("isMovingDown", false);
+        animator.SetBool("isMovingUp", false);
        }
     }
     private bool TryMove(Vector2 direction){
