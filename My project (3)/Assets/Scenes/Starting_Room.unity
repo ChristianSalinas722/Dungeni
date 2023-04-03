@@ -838,7 +838,7 @@ Transform:
   - {fileID: 389719185}
   - {fileID: 1099306180}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &599639583
 GameObject:
@@ -850,6 +850,7 @@ GameObject:
   m_Component:
   - component: {fileID: 599639585}
   - component: {fileID: 599639584}
+  - component: {fileID: 599639586}
   m_Layer: 0
   m_Name: EnterDungeonCollider
   m_TagString: Untagged
@@ -867,10 +868,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0316298, y: -0.24038649}
+  m_Offset: {x: -0.0316298, y: -0.5743134}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -881,7 +882,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.8851352, y: 2.113368}
+  m_Size: {x: 2.8851352, y: 2.7812219}
   m_EdgeRadius: 0
 --- !u!4 &599639585
 Transform:
@@ -896,8 +897,21 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &599639586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599639583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 986a091979816d948aa437556d63486f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: TestDungeon
 --- !u!1 &716511153
 GameObject:
   m_ObjectHideFlags: 3
@@ -1037,7 +1051,7 @@ Transform:
   m_Children:
   - {fileID: 716511154}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &801533790
 MonoBehaviour:
@@ -1160,7 +1174,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1099306179
 GameObject:
@@ -2531,7 +2545,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1480392661
 GameObject:
@@ -4073,7 +4087,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2043056321
 GameObject:
@@ -5956,6 +5970,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5310131569127356116, guid: ed91252855bdadd41b7379c786e13d7a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5310131569843886243, guid: ed91252855bdadd41b7379c786e13d7a, type: 3}
       propertyPath: m_RootOrder
       value: 0
