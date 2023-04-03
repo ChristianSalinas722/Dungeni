@@ -16,15 +16,15 @@ public class PlayerCombat : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-      if(Input.GetKeyDown(KeyCode.RightClick)){
+      if(Input.GetKeyDown(KeyCode.Space)){
         Attack();
       }
       if(isAttack){
-        timer += timer.deltaTime;
-        if(time >= timeToAttack){
+        timer += Time.deltaTime;
+        if(timer >= timeToAttack){
             timer = 0;
             isAttack = false;
-            attackArea.SetActive();
+            attackArea.SetActive(isAttack);
         }
       }
     }

@@ -39,15 +39,27 @@ public class Character : MonoBehaviour
             }
             if(movementInput.x > 0){
             animator.SetBool("isMovingRight", success);
+                if(Input.GetKeyDown(KeyCode.Space)){
+                    animator.SetTrigger("attackDown");
+                }
             }
             if(movementInput.y < 0){
                 animator.SetBool("isMovingDown", success);
+                if(Input.GetKeyDown(KeyCode.Space)){
+                    animator.SetTrigger("attackDown");
+                }
             }
             if(movementInput.y > 0){
                 animator.SetBool("isMovingUp", success);
+                if(Input.GetKeyDown(KeyCode.Space)){
+                    animator.SetTrigger("attackDown");
+                }
             }
             if(movementInput.x < 0){
                 animator.SetBool("isMovingLeft", success);
+                if(Input.GetKeyDown(KeyCode.Space)){
+                    animator.SetTrigger("attackDown");
+                }
             }
        }
        else{

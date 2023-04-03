@@ -6,7 +6,7 @@ public class AttackArea : MonoBehaviour
 {
   private int damage = 3;
 
-  private void OnTrigger2D(Collider2D collider){
+  private void OnTriggerEnter2D(Collider2D collider){
     Health hp = collider.GetComponent<Health>();
     hp.Damage(damage);
   }

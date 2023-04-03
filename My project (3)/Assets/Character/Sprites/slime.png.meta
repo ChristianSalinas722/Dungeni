@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 23300c7a994d6644da45d18ad1da5bc8
+guid: dbd6756b27dc11c4aac55e144b961654
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,139 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: attack sprites_0
+      name: slime_0
       rect:
         serializedVersion: 2
-        x: 75
-        y: 642
-        width: 42
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 341917bcee3abe74d9d418ef10e7f8e4
-      internalID: 879303753
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack sprites_1
-      rect:
-        serializedVersion: 2
-        x: 267
-        y: 642
-        width: 42
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 297b56c41b0308c429d2859e8dde4eab
-      internalID: 1246424305
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack sprites_2
-      rect:
-        serializedVersion: 2
-        x: 456
-        y: 624
-        width: 60
-        height: 99
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6d7974de8f704b438e21afb6c5b1568
-      internalID: -15716400
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack sprites_3
-      rect:
-        serializedVersion: 2
-        x: 651
-        y: 642
-        width: 42
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 799db5190d7953d47ba2caf47f55337f
-      internalID: 755648543
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack sprites_4
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 456
-        width: 33
-        height: 78
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0bb10a61bcd90104383c13afb38aa1fc
-      internalID: 1294638327
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack sprites_5
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 456
-        width: 48
-        height: 78
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c7a8a5af431b8ea43b31e011a6d4f25a
-      internalID: 1974627909
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack sprites_6
-      rect:
-        serializedVersion: 2
-        x: 459
-        y: 453
+        x: 18
+        y: 318
         width: 69
-        height: 81
+        height: 57
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa5f37636c7b36f45ab9c84d27f87721
-      internalID: 2088623119
+      spriteID: 8f75dd40b78ccba4d900a532cdf9b323
+      internalID: 928904718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack sprites_7
+      name: slime_1
       rect:
         serializedVersion: 2
-        x: 648
-        y: 456
-        width: 33
-        height: 78
+        x: 114
+        y: 309
+        width: 78
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3662db9cc28c1b648a88c1c37e821dd3
-      internalID: 542518716
+      spriteID: e892016c8ff243a4985d305bfc3f606d
+      internalID: -698423108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack sprites_8
+      name: slime_2
       rect:
         serializedVersion: 2
-        x: 78
-        y: 261
-        width: 33
-        height: 78
+        x: 210
+        y: 309
+        width: 78
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,104 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3cc9f1e5a2f6d944b3270723e77bfd5
-      internalID: -1999527359
+      spriteID: 739ee5b255cedeb469c32b147f52b009
+      internalID: -1843282649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack sprites_9
+      name: slime_3
       rect:
         serializedVersion: 2
-        x: 264
-        y: 264
-        width: 48
-        height: 78
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76ad925d61d36f6439363cb3169df335
-      internalID: -1058637709
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack sprites_10
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 261
-        width: 69
-        height: 81
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 698ad02bc2f40924d91abc94c1724d85
-      internalID: -1663942857
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack sprites_11
-      rect:
-        serializedVersion: 2
-        x: 654
-        y: 261
-        width: 33
-        height: 78
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82aa1a2e974dec945a9decbbd7cd24f2
-      internalID: 779956677
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack sprites_12
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 66
-        width: 42
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45b96e54dbf558a4e8d23b6d4267494e
-      internalID: 1891154955
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack sprites_13
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 66
+        x: 18
+        y: 213
         width: 66
-        height: 84
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -392,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96d3c23ca1f495047b71b71b6f9c56da
-      internalID: -287872814
+      spriteID: f0bd8e75599035e41903aee6d75565ef
+      internalID: -374462978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack sprites_14
+      name: slime_4
       rect:
         serializedVersion: 2
-        x: 456
-        y: 66
-        width: 75
-        height: 96
+        x: 114
+        y: 222
+        width: 69
+        height: 57
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -413,8 +203,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34e51ad1e2ac66345b425806cc2ea530
-      internalID: 1266728140
+      spriteID: 7a0c1aaf98c939145a3659328caec6b4
+      internalID: 1064622059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 213
+        width: 78
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ee5d377deaef74c9a4f01ea04f4e9e
+      internalID: -945968436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 117
+        width: 78
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04edda32671a3454a9c1e25cdfea77a8
+      internalID: -503538647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_7
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 117
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72d6d5ddb1b2df4a9814e0d519aa8aa
+      internalID: 814050260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_8
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 117
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e133488197e617c4e9ce405049988fe4
+      internalID: 1496826909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_9
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 30
+        width: 69
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478b8b367657c8046b95e1713028f5d4
+      internalID: -424301858
       vertices: []
       indices: 
       edges: []
@@ -430,21 +325,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      attack sprites_11: 779956677
-      attack sprites_6: 2088623119
-      attack sprites_2: -15716400
-      attack sprites_14: 1266728140
-      attack sprites_0: 879303753
-      attack sprites_12: 1891154955
-      attack sprites_3: 755648543
-      attack sprites_4: 1294638327
-      attack sprites_1: 1246424305
-      attack sprites_5: 1974627909
-      attack sprites_8: -1999527359
-      attack sprites_10: -1663942857
-      attack sprites_9: -1058637709
-      attack sprites_7: 542518716
-      attack sprites_13: -287872814
+      slime_2: -1843282649
+      slime_5: -945968436
+      slime_9: -424301858
+      slime_7: 814050260
+      slime_1: -698423108
+      slime_0: 928904718
+      slime_6: -503538647
+      slime_8: 1496826909
+      slime_3: -374462978
+      slime_4: 1064622059
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
