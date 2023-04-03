@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private int hp = 100;
+
+    private int MAX_HEALTH = 100;
 
      void Update(){
         if(Input.GetKeyDown(KeyCode.D)){
             Damage(10);
         }
-        if(Input.GetKeyDown(KeyCode.H));
+        if(Input.GetKeyDown(KeyCode.H)){
+            Heal(10);
+        }
     }
      public void Damage(int amount){
      if(amount < 0){
@@ -39,4 +39,3 @@ public class Health : MonoBehaviour
         Destroy(gameObject);
     }
 }
-
