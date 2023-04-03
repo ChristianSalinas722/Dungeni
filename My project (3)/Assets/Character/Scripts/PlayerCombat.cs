@@ -7,6 +7,7 @@ public class PlayerCombat : MonoBehaviour
     private GameObject attackArea = default;
 
     private bool isAttack = false;
+    public Animator animator;
 
     private float timeToAttack = 0.25f;
     private float timer = 0f;
