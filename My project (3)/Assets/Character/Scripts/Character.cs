@@ -25,7 +25,11 @@ public class Character : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       if(movementInput != Vector2.zero){
+         if(Input.GetKeyDown(KeyCode.Space)){
+                    animator.SetTrigger("attackDown");
+                } 
+       }
     }
     void FixedUpdate(){
        if (movementInput != Vector2.zero){
@@ -38,28 +42,17 @@ public class Character : MonoBehaviour
                 }
             }
             if(movementInput.x > 0){
-            animator.SetBool("isMovingRight", success);
-                if(Input.GetKeyDown(KeyCode.Space)){
-                    animator.SetTrigger("attackDown");
-                }
+            animator.SetBool("isMovingRight", success);    
             }
             if(movementInput.y < 0){
                 animator.SetBool("isMovingDown", success);
-                if(Input.GetKeyDown(KeyCode.Space)){
-                    animator.SetTrigger("attackDown");
-                }
             }
             if(movementInput.y > 0){
                 animator.SetBool("isMovingUp", success);
-                if(Input.GetKeyDown(KeyCode.Space)){
-                    animator.SetTrigger("attackDown");
-                }
+               
             }
             if(movementInput.x < 0){
                 animator.SetBool("isMovingLeft", success);
-                if(Input.GetKeyDown(KeyCode.Space)){
-                    animator.SetTrigger("attackDown");
-                }
             }
        }
        else{
