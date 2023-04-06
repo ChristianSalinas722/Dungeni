@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject options;
+    public GameObject Menu;
    public void ChangeScence(string sceneName){
         PauseMenu.GameIsPaused = false;
         SceneManager.LoadScene(sceneName);
@@ -13,4 +15,5 @@ public class MainMenu : MonoBehaviour
     Application.Quit();
     Debug.Log("Game Has Ended");
    }
+
 }

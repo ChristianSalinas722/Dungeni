@@ -237,6 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1798f1880f29d394681a654b1527fb79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Menu: Main Menu
   pauseMenuUi: {fileID: 1368871293}
 --- !u!4 &516497967 stripped
 Transform:
