@@ -7,6 +7,10 @@ public class MainMenu : MonoBehaviour
 {
     public GameObject options;
     public GameObject Menu;
+public void Start(){
+    options.SetActive(false);
+    Menu.SetActive(true);
+}
    public void ChangeScence(string sceneName){
         PauseMenu.GameIsPaused = false;
         SceneManager.LoadScene(sceneName);
