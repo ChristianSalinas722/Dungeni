@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
     [SerializeField] private int hp = 100;
+    public Slider slider;
+
 
     private int MAX_HEALTH = 100;
 
@@ -15,6 +18,9 @@ public class Health : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.H)){
            // Heal(10);
         }
+    }
+    public void SetHealth(){
+        slider.value = hp;
     }
      public void Damage(int amount){
      if(amount < 0){

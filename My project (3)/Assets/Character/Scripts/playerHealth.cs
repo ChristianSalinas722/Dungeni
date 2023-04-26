@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class playerHealth : MonoBehaviour
 {
-     [SerializeField] private int hp = 100;
+    [SerializeField] private int hp = 100;
+    public Slider slider;
+
 
     private int MAX_HEALTH = 100;
 
@@ -21,13 +23,16 @@ public class playerHealth : MonoBehaviour
          throw new System.ArgumentOutOfRangeException("Your attack did nothing mortal");
         }
         this.hp -= amount;
+        if(hp <= 0){
+            Die();
+        }
     }
      public void Heal(int amount){
      if(amount < 0){
         throw new System.ArgumentOutOfRangeException("Your Healing failed");
      }
         bool isOverMaxHealth = hp + amount > MAX_HEALTH;
-        if(hp + amount > MAX_HEALTH){
+        if(isOverMaxHealth){
          this.hp = MAX_HEALTH;
         }
         else{
