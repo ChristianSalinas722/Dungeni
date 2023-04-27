@@ -26,6 +26,7 @@ public class playerHealth : MonoBehaviour
          throw new System.ArgumentOutOfRangeException("Your attack did nothing mortal");
         }
         this.hp -= amount;
+        SetHealth();
         if(hp <= 0){
             Die();
         }
@@ -41,6 +42,7 @@ public class playerHealth : MonoBehaviour
         else{
             this.hp += amount;   
         }
+        SetHealth();
     }
      private void Die(){
         Debug.Log("I am Dead");

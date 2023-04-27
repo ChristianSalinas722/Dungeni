@@ -7,8 +7,8 @@ public class EnemyAttack : MonoBehaviour
   private int damage = 10;
 
   private void OnTriggerEnter2D(Collider2D collider){
-   
-    Health hp = collider.GetComponent<Health>();
+    Debug.Log("You've been hit");
+    playerHealth hp = collider.GetComponent<playerHealth>();
     if(hp != null){
       hp.Damage(damage);
     }
