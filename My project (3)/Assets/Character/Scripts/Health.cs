@@ -18,10 +18,7 @@ public class Health : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.H)){
            // Heal(10);
         }
-    }
-    public void SetHealth(){
-        slider.value = hp;
-    }
+    } 
      public void Damage(int amount){
      if(amount < 0){
          throw new System.ArgumentOutOfRangeException("Your attack did nothing mortal");

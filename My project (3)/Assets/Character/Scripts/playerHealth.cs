@@ -6,7 +6,7 @@ public class playerHealth : MonoBehaviour
 {
     [SerializeField] private int hp = 100;
     public Slider slider;
-
+      
 
     private int MAX_HEALTH = 100;
 
@@ -28,6 +28,7 @@ public class playerHealth : MonoBehaviour
         this.hp -= amount;
         SetHealth();
         if(hp <= 0){
+            
             Die();
         }
     }
