@@ -11,6 +11,8 @@ public class PauseMenu : MonoBehaviour
    public GameObject pauseMenuUi;
 
    public GameObject HealthBar;
+   
+   public GameObject deathScreen;
 
     // Update is called once per frame
     void Update()
@@ -44,5 +46,16 @@ public class PauseMenu : MonoBehaviour
     public void QuitGame(){
         Debug.Log("Quitting Game");
         Application.Quit();
+    }
+
+    private void OnEnable(){
+        playerHealth.onPlayerDeath += playerDeath;
+    }
+    private void OnDisable(){
+        playerHealth.onPlayerDeath -= playerDeath;
+    }
+    public void playerDeath(){
+        Time.timeScale = 0f;
+        deathScreen.SetActive(true);
     }
 }

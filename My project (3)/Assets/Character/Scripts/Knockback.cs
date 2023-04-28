@@ -23,6 +23,7 @@ public class Knockback : MonoBehaviour
         }
         Debug.Log("push");
         Vector2 direction = (transform.position-victim.transform.position).normalized;
+        if(victim)
         victim.GetComponent<Rigidbody2D>().AddForce(direction * strength, ForceMode2D.Impulse);
         StartCoroutine(Reset(victim));
     }

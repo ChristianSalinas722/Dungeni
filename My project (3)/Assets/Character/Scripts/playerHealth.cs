@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 public class playerHealth : MonoBehaviour
 {
     [SerializeField] private int hp = 100;
     public Slider slider;
-      
+    public static event Action onPlayerDeath;
 
     private int MAX_HEALTH = 100;
 
@@ -27,8 +28,7 @@ public class playerHealth : MonoBehaviour
         }
         this.hp -= amount;
         SetHealth();
-        if(hp <= 0){
-            
+        if(hp <= 0){    
             Die();
         }
     }
@@ -47,6 +47,7 @@ public class playerHealth : MonoBehaviour
     }
      private void Die(){
         Debug.Log("I am Dead");
-        Destroy(gameObject);
+        onPlayerDeath?.Invoke();
+        
     }
 }
