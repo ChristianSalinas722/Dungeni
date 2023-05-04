@@ -8,6 +8,8 @@ public class EnemyAttack : MonoBehaviour
 
   private void OnTriggerEnter2D(Collider2D collider){
     Debug.Log("You've been hit");
+    GetComponent<AudioSource>().pitch = Random.Range(.8f, 1.1f);
+    GetComponent<AudioSource>().Play();
     playerHealth hp = collider.GetComponent<playerHealth>();
     if(hp != null){
       hp.Damage(damage);

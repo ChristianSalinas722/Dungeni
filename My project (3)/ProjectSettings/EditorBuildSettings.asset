@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestDungeon.unity
     guid: e18774858abea884da4c41632f79ecbc
+  - enabled: 1
+    path: Assets/Scenes/TFP.unity
+    guid: dcd1b5ec1ad1da948b7ecf8dc9132f58
   m_configObjects: {}
