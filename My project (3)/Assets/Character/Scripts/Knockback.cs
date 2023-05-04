@@ -5,22 +5,34 @@ using UnityEngine.Events;
 
 public class Knockback : MonoBehaviour
 {
-     [SerializeField] private Rigidbody2D rb2d;
     [SerializeField] private float strength = 16, delay = 0.15f;
 
     public UnityEvent OnBegin, OnDone;
 
-    public void PlayFeedback(GameObject sender){
+    public GameObject attackArea;
+
+    public void OnTriggerEnter2D(Collider2D other){
+        PlayFeedback(other.gameObject);
+    }
+    public void PlayFeedback(GameObject victim){
         StopAllCoroutines();
         OnBegin?.Invoke();
-        Vector2 direction = (transform.position-sender.transform.position).normalized;
-        rb2d.AddForce(direction * strength, ForceMode2D.Impulse);
-        StartCoroutine(Reset());
+
+        if(victim.GetComponent<Rigidbody2D>() == null){
+            return;
+        }
+        Debug.Log("push");
+        Vector2 direction = (transform.position-victim.transform.position).normalized;
+        if(victim)
+        victim.GetComponent<Rigidbody2D>().AddForce(direction * strength, ForceMode2D.Impulse);
+        StartCoroutine(Reset(victim));
     }
 
-    private IEnumerator Reset(){
+    private IEnumerator Reset(GameObject victim){
         yield return new WaitForSeconds(delay);
-        rb2d.velocity = Vector3.zero;
+        if(victim != null){
+        victim.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        }
         OnDone?.Invoke();
     }
 }

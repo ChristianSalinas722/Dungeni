@@ -19,6 +19,8 @@ public class PlayerCombat : MonoBehaviour
     {
       if(Input.GetKeyDown(KeyCode.Space)){
         Attack();
+         GetComponent<AudioSource>().pitch = Random.Range(.8f, 1.1f);
+         GetComponent<AudioSource>().Play();
       }
       if(isAttack){
         timer += Time.deltaTime;
